@@ -1,14 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
+<h1>
   <%= @fumbl.title %>
-</p>
+</h1>
 
-<p>
-  <b>Body:</b>
+<div class='body'>
   <%= @fumbl.body %>
-</p>
+</div>
 
 
 <%= link_to 'Edit', edit_fumbl_path(@fumbl) %> |
