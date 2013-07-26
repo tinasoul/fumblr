@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @fumbl.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @fumbl.body %>
+</p>
+
+
+<%= link_to 'Edit', edit_fumbl_path(@fumbl) %> |
+<%= link_to 'Back', fumbls_path %>
