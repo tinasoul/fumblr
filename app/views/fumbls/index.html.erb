@@ -3,7 +3,6 @@
 <table>
   <tr>
     <th>Title</th>
-    <th>Body</th>
     <th></th>
     <th></th>
     <th></th>
@@ -11,11 +10,9 @@
 
 <% @fumbls.each do |fumbl| %>
   <tr>
-    <td><%= fumbl.title %></td>
-    <td><%= fumbl.body %></td>
-    <td><%= link_to 'Show', fumbl %></td>
-    <td><%= link_to 'Edit', edit_fumbl_path(fumbl) %></td>
-    <td><%= link_to 'Destroy', fumbl, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to fumbl.title, fumbl %></td>
+    <td>[<%= link_to 'Edit', edit_fumbl_path(fumbl) %></td>
+    <td><%= link_to 'Destroy', fumbl, method: :delete, data: { confirm: 'Are you sure?' } %>]</td>
   </tr>
 <% end %>
 </table>
