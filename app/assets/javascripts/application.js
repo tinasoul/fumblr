@@ -11,5 +11,9 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require markdown
 //= require jquery_ujs
+//= require foundation
 //= require_tree .
+
+$(function(){ $(document).foundation(); });
